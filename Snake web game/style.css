@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    background-color: #eee;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0 45px 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#search-input{
+    width: 120%;
+    max-width: 600px;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button{
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-example0{
+    margin-bottom: 30px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-example0 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.image-example0:hover img{
+    opacity: 0.6;
+}
+
+.image-example0 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-button{
+    background-color: #2E3B3F;
+    color: #f1f2f2;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .image-example0{
+        padding: 20px;
+    }
+
+    .images{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .images{
+        width: 100%;
+    }
+}
